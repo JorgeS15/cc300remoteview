@@ -1,6 +1,6 @@
 # Engel CC300 Remote View (Windows Script)
 
-A Windows batch script that automates remote VNC connections to IMMI Engel CC300 Control Panels, with optional SSH tunneling support.
+A Windows batch script that automates remote VNC connections to IMM Engel CC300 Control Panels, with optional SSH tunneling support.
 
 ## Prerequisites
 
