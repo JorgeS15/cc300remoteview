@@ -36,3 +36,24 @@ set "IP_BASE=10.201.52"      # Base IP for last octet mode
 
 set "SSH_USER=changeme"      # CC300 SSH username
 set "SSH_PASSWORD=changeme"  # CC300 SSH password
+```
+
+## Security Warning
+
+- Restrict file permissions
+- Keep the script secure
+
+## Troubleshooting
+
+- **Can't find VNC/PuTTY**: Update the paths in the script's `PUTTY_PATH` and `VNC_PATH` variables
+- **SSH tunnel fails**: Check credentials and increase `SSH_TIMEOUT` in the script
+- **Direct connection fails**: Your CC300 version likely requires SSH tunnel
+
+## Author
+
+**Jorge Santos** (JorgeS15)  
+GitHub: [@JorgeS15](https://github.com/JorgeS15)
+
+## Contributing
+
+Issues and pull requests welcome!
