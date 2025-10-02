@@ -3,7 +3,7 @@ chcp 65001 >nul
 REM =========================================
 REM Script: Engel CC300 Remote View
 REM Author: Jorge Santos(JorgeS15)
-REM Date: 09/30/2025
+REM Date: 30/09/2025
 REM Version: 1.8
 REM =========================================
 
@@ -31,7 +31,7 @@ setlocal enabledelayedexpansion
 echo =========================================
 echo   Engel CC300 Remote View
 echo   Author: Jorge Santos (JorgeS15)
-echo   Version: 1.8 (09/30/2025)
+echo   Version: 1.8 (30/09/2025)
 echo.
 echo   github.com/JorgeS15/cc300remoteview
 echo =========================================
@@ -205,4 +205,5 @@ goto input_complete_ip
 echo.
 echo Script completed.
 endlocal
+
 exit /b 0
