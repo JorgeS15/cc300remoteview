@@ -1,20 +1,12 @@
 @echo off
-chcp 65001 >nul
-REM =========================================
-REM Script: Engel CC300 Remote View
-REM Author: Jorge Santos(JorgeS15)
-REM Date: 30/09/2025
-REM Version: 1.8
-REM =========================================
-
 REM =========================================
 REM SETTINGS
 REM =========================================
 set "USE_IP_BASE=FALSE"
 set "IP_BASE=10.201.52"
 
-set "SSH_USER=changeme"
-set "SSH_PASSWORD=changeme"
+set "SSH_USER=CHANGEME"
+set "SSH_PASSWORD=CHANGEME"
 
 set "SSH_LOCAL_PORT=10060"
 set "SSH_REMOTE_PORT=5900"
@@ -23,15 +15,18 @@ set "SSH_TIMEOUT=3"
 set "CLEANUP_TIMEOUT=2"
 
 set "PUTTY_PATH=C:\Program Files\PuTTY"
-set "VNC_PATH=C:\Program Files\RealVNC\VNC Viewer"
-REM =========================================
+set "VNC_PATH=C:\Program Files\TigerVNC"
+
+REM Alternative VNC viewers (using vncviewer.exe):
+REM UltraVNC: C:\Program Files\uvnc bvba\UltraVNC
+REM RealVNC: C:\Program Files\RealVNC\VNC Viewer
 
 setlocal enabledelayedexpansion
 
 echo =========================================
 echo   Engel CC300 Remote View
 echo   Author: Jorge Santos (JorgeS15)
-echo   Version: 1.8 (30/09/2025)
+echo   Version: 1.9 (07/10/2025)
 echo.
 echo   github.com/JorgeS15/cc300remoteview
 echo =========================================
@@ -152,8 +147,7 @@ REM Create a temporary script for SSH tunnel
 set "temp_script=%TEMP%\ssh_tunnel_%RANDOM%.bat"
 echo @echo off > "!temp_script!"
 echo cd "%PUTTY_PATH%" >> "!temp_script!"
-echo echo y ^| plink.exe -batch -N -v -pw %SSH_PASSWORD% %SSH_USER%@!ip_address! -L %SSH_LOCAL_PORT%:localhost:%SSH_REMOTE_PORT% >> "!temp_script!"
-echo exit >> "!temp_script!"
+echo ^(echo y^) ^| plink.exe -N -pw %SSH_PASSWORD% %SSH_USER%@!ip_address! -L %SSH_LOCAL_PORT%:localhost:%SSH_REMOTE_PORT% >> "!temp_script!"
 
 REM Start SSH tunnel in background that closes automatically
 start "SSH Tunnel" /MIN cmd /c "!temp_script!"
@@ -205,5 +199,4 @@ goto input_complete_ip
 echo.
 echo Script completed.
 endlocal
-
 exit /b 0
