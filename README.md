@@ -8,7 +8,7 @@ A Windows batch script that automates remote VNC connections to Engel CC300 Cont
 
 - **VNC Viewer** - Choose one (TigerVNC recommended):
   - **[TigerVNC](https://sourceforge.net/projects/tigervnc/)** ⭐ Recommended - Open source, GPL license
-  - [UltraVNC]([https://uvnc.com/](https://uvnc.com/downloads/ultravnc.html)) - Open source, GPL license
+  - [UltraVNC](https://uvnc.com/downloads/ultravnc.html) - Open source, GPL license
   - [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) - Free for personal use
   
 - **PuTTY** - Only required for newer CC300 versions needing SSH tunnel
