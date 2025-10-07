@@ -37,7 +37,7 @@ A Windows batch script that automates remote VNC connections to Engel CC300 Cont
 
 ## Quick Start
 
-1. Double-click `cc300remoteview_en.bat`
+1. Double-click `cc300remoteview.bat`
 2. Enter the CC300 machine IP address
 3. Choose whether to use SSH tunnel (Y/N)
    - **N** for older CC300 versions (direct VNC)
