@@ -12,7 +12,7 @@ A Windows batch script that automates remote VNC connections to Engel CC300 Cont
   - [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) - Free for personal use
   
 - **PuTTY** - Only required for newer CC300 versions needing SSH tunnel
-  - Download: [PuTTY]([https://www.putty.org/](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)) (Open source, MIT license)
+  - Download: [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (Open source, MIT license)
 
 ### System Requirements
 
@@ -25,12 +25,12 @@ A Windows batch script that automates remote VNC connections to Engel CC300 Cont
    [`cc300remoteview.bat`](cc300remoteview.bat)
 
 2. Install TigerVNC:
-   - Download from [tigervnc.org]([https://tigervnc.org/](https://sourceforge.net/projects/tigervnc/))
+   - Download from [tigervnc.org](https://sourceforge.net/projects/tigervnc/)
    - For Windows 10/11 64-bit, download `vncviewer64-[version].exe`
    - Install to default location: `C:\Program Files\TigerVNC`
 
 3. Install PuTTY (if using SSH tunnel):
-   - Download from [putty.org]([https://www.putty.org/](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+   - Download from [putty.org](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
    - Install to default location: `C:\Program Files\PuTTY`
 
 4. Configure the script (see Configuration section below)
