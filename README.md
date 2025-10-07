@@ -162,4 +162,6 @@ GitHub: [@JorgeS15](https://github.com/JorgeS15)
 
 Issues and pull requests welcome!
 
-**Disclaimer**: This is an unofficial tool. Not affiliated with Engel Austria GmbH.
+## Disclaimer
+
+This is an unofficial tool. Not affiliated with Engel Austria GmbH.
